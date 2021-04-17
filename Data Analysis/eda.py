@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 PLOT = True
 MAXHEIGHT = 3
 dirpath = "Data\\lds-bay-of-plenty-lidar-1m-dsm-2018-2019-GTiff\\"
-out_fp = "Data\\processed\\DEM_edgecombe.tiff"
+out_fp = "Data\\processed\\DEM_edgecombe.tif"
 fns = os.path.join(dirpath,"*.tif")
 
 fps = glob.glob(fns)
@@ -27,7 +27,6 @@ out_meta.update({"driver": "GTiff",
                      "height": mosaic.shape[1],
                      "width": mosaic.shape[2],
                      "transform": out_trans,
-                     "crs": "+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs "
                      }
                     )
 with rasterio.open(out_fp, "w", **out_meta) as dest:
