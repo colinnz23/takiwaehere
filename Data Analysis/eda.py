@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 
 PLOT = True
 MAXHEIGHT = 3
-dirpath = "Data\\lds-bay-of-plenty-lidar-1m-dsm-2018-2019-GTiff\\"
-out_fp = "Data\\processed\\DEM_edgecombe.tif"
+dirpath = "Data/lds-bay-of-plenty-lidar-1m-dsm-2018-2019-GTiff/"
+out_fp = "Data/processed/DEM_edgecombe.tif"
 fns = os.path.join(dirpath,"*.tif")
 
 fps = glob.glob(fns)
