@@ -20,13 +20,13 @@
         <div class = "sideBar">
             <ul class="sideListMapList">
                 <li class="list-map">
-                    <a href="#" class="mapText" onclick="satellite()"><span>Satellite</span></a>
+                    <a href="#" class="mapText" onclick="selectSatellite()"><span>Satellite</span></a>
                 </li>
                 <li class="list-map">
-                    <a href="#" class="mapText"><span>Map</span></a>
+                    <a href="#" class="mapText" onclick="selectMap()"><span>Map</span></a>
                 </li>
                 <li class="list-map">
-                    <a href="#" class="mapText"><span>Road</span></a>
+                    <a href="#" class="mapText" onclick="selectRoad()"><span>Road</span></a>
                 </li>
             </ul>
             <input type="checkbox" class = "vehicleText" id="car" name="car"><label for="car">   Car</label>
@@ -44,8 +44,15 @@
 
 </body>
 <script>
-    function satellite() {
-       alert("hello world");
+    function selectSatellite() {
+       alert("satellite selected");
     }
+    function selectMap() {
+       alert("map selected");
+    }
+    function selectRoad() {
+       alert("road selected");
+    }
+
 </script>
 </html>
