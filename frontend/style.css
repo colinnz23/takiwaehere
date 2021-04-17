@@ -1,0 +1,124 @@
+/* General Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    padding: 20px 30px 10px 30px;
+    background-color: #edf2f9;
+}
+
+/* Header */
+header {
+    box-shadow: 1px 1px 9px 0px rgba(0,0,0,0.36);
+    height: 60px;
+    border-radius: 10px;
+    line-height: 60px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.title {
+    margin-left: 40px;
+    color: #6a6a6b;
+}
+
+/* Content */
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Sidebar */
+.sidebar {
+    box-shadow: 1px 1px 9px 0px rgba(0,0,0,0.36);
+    background-color: white;
+    width: 250px;
+    margin-right: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.subHeading {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    background-color: #52647c;
+    margin-bottom: 10px;
+}
+
+.mapViewOptions {
+    margin-bottom: 30px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    margin: 0px 20px;
+    border-radius: 30px;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: #e3e8ef;
+}
+
+.mapText {
+    color: black;
+}
+
+.method {
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.methodOptions {
+    text-align: center;
+}
+
+.methodWrapper {
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0px 30px;
+    margin: 0px 20px;
+    border-radius: 30px;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+.methodWrapper:hover {
+    background-color: #e3e8ef;
+}
+
+.methodCheckbox {
+    display: none;
+}
+/* Map */
+.map {
+    width: 80%;
+    height: 500px;
+    box-shadow: 1px 1px 9px 0px rgba(0,0,0,0.36);
+    background-color: white;
+    border-radius: 10px;
+}

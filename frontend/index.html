@@ -19,7 +19,8 @@
     
     <!-- Body -->
     <section>
-        <nav class = "sideBar">
+        <nav class = "sidebar">
+            <h2 class="subHeading">View Option</h2>
             <ul class="mapViewOptions">
                 <li class="item">
                     <a href="#" id="satelliteSelection" class="mapText"><span>Satellite</span></a>
@@ -31,15 +32,24 @@
                     <a href="#" class="mapText"><span>Road</span></a>
                 </li>
             </ul>
+            <h2 class="subHeading">Vehicle</h2>
             <div class="methodOptions">
-                <input type="checkbox" class = "vehicleText" id="car" name="car"><label for="car">Car</label>
-                <input type="checkbox" class = "vehicleText" id="truck" name="truck"><label for="truck">Truck</label>
-                <input type="checkbox" class = "vehicleText" id="bus" name="bus"><label for="bus">Bus</label>
-                <input type="checkbox" class = "vehicleText" id="motorbike" name="motorbike"><label for="motorbike">Motorbike</label>
+                <div class="methodWrapper">
+                    <input type="checkbox" class = "methodCheckbox" id="car" name="car"><label for="car">Car</label>
+                </div>
+                <div class="methodWrapper">
+                    <input type="checkbox" class = "methodCheckbox" id="truck" name="truck"><label for="truck">Truck</label>
+                </div>
+                <div class="methodWrapper">
+                    <input type="checkbox" class = "methodCheckbox" id="bus" name="bus"><label for="bus">Bus</label>
+                </div>
+                <div class="methodWrapper">
+                    <input type="checkbox" class = "methodCheckbox" id="motorbike" name="motorbike"><label for="motorbike">Motorbike</label>
+                </div>
             </div>
         </nav>
         <div class = "map">
-            map
+            
         </div>
     </section>
     <!-- /Body -->
