@@ -4,55 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <script defer src="./main.js"></script>
 </head>
 <body>
     <!-- Page Header-->
     <header>
         <div class = "title">
-            <h1>Title</h1>
+            <h1>Simplex</h1>
         </div>
     </header>
     <!-- /Page Header-->
     
     <!-- Body -->
     <section>
-        <div class = "sideBar">
-            <ul class="sideListMapList">
-                <li class="list-map">
-                    <a href="#" class="mapText" onclick="selectSatellite()"><span>Satellite</span></a>
+        <nav class = "sideBar">
+            <ul class="mapViewOptions">
+                <li class="item">
+                    <a href="#" id="satelliteSelection" class="mapText"><span>Satellite</span></a>
                 </li>
-                <li class="list-map">
-                    <a href="#" class="mapText" onclick="selectMap()"><span>Map</span></a>
+                <li class="item">
+                    <a href="#" class="mapText"><span>Map</span></a>
                 </li>
-                <li class="list-map">
-                    <a href="#" class="mapText" onclick="selectRoad()"><span>Road</span></a>
+                <li class="item">
+                    <a href="#" class="mapText"><span>Road</span></a>
                 </li>
             </ul>
-            <input type="checkbox" class = "vehicleText" id="car" name="car"><label for="car">   Car</label>
-            <input type="checkbox" class = "vehicleText" id="Truck" name="Truck"><label for="Truck">   Truck</label>
-            <input type="checkbox" class = "vehicleText" id="Bus" name="Bus"><label for="Bus">   Bus</label>
-            <input type="checkbox" class = "vehicleText" id="Motorbike" name="Motorbike"><label for="Motorbike">   Motorbike</label>
-               
-        </div>
+            <div class="methodOptions">
+                <input type="checkbox" class = "vehicleText" id="car" name="car"><label for="car">Car</label>
+                <input type="checkbox" class = "vehicleText" id="truck" name="truck"><label for="truck">Truck</label>
+                <input type="checkbox" class = "vehicleText" id="bus" name="bus"><label for="bus">Bus</label>
+                <input type="checkbox" class = "vehicleText" id="motorbike" name="motorbike"><label for="motorbike">Motorbike</label>
+            </div>
+        </nav>
         <div class = "map">
             map
         </div>
     </section>
     <!-- /Body -->
-
-
 </body>
-<script>
-    function selectSatellite() {
-       alert("satellite selected");
-    }
-    function selectMap() {
-       alert("map selected");
-    }
-    function selectRoad() {
-       alert("road selected");
-    }
-
-</script>
 </html>
