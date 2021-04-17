@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Simplex</title>
-    <script defer src="./main.js"></script>
+    <script defer src="./browserActions.js"></script>
 </head>
 <body>
     <!-- Page Header-->
     <header>
         <div class = "title">
-            <a href="#" class="titleText" onclick="reload()">Simplex</a>
+            <a id="logo" href="#" class="titleText">Simplex Proto</a>
         </div>
     </header>
     <!-- /Page Header-->
@@ -23,10 +23,10 @@
             <h2 class="subHeading">View Option</h2>
             <ul class="mapViewOptions">
                 <li class="item">
-                    <a href="#" id="satelliteSelection" class="mapText"><span>Satellite</span></a>
+                    <a href="#" id="mapSelection" class="mapText"><span>Map</span></a>
                 </li>
                 <li class="item">
-                    <a href="#" id="mapSelection" class="mapText"><span>Map</span></a>
+                    <a href="#" id="satelliteSelection" class="mapText"><span>Satellite</span></a>
                 </li>
                 <li class="item">
                     <a href="#" id="roadSelection" class="mapText"><span>Road</span></a>
@@ -48,15 +48,15 @@
                 </div>
             </div>
         </nav>
-        <div class = "map">
-            <iframe class="mapDisplay" src="./map_display/kepler.gl.html" height="200" width="300" title="Iframe Example"></iframe>
+        <div id="iframeWrapper" class = "map">
+           <iframe id="iframe" class="mapDisplay" src="./kepler.gl.html"></iframe>
         </div>
     </section>
+
+    <!-- test -->
+
+    <script src="./service/index.js"></script>
+
     <!-- /Body -->
-    <script>
-        function reload() {
-          location.reload();
-        }
-    </script>
 </body>
 </html>
