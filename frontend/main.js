@@ -1,12 +1,12 @@
 const setIFrame = document.querySelector(".mapDisplay");
 function selectSatellite() {
-    setIFrame.setAttribute('src',"./map_display/kepler.glSattel.html");
+    setIFrame.setAttribute('src',"./map_display/kepler.gl2.html");
  }
  function selectMap() {
-   setIFrame.setAttribute('src',"./map_display/kepler.glMap.html");
+   setIFrame.setAttribute('src',"./map_display/kepler.gl3.html");
  }
  function selectRoad() {
-   setIFrame.setAttribute('src',"./map_display/kepler.glRoad.html");
+   setIFrame.setAttribute('src',"./map_display/kepler.gl1.html");
  }
 
 
