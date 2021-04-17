@@ -1,18 +1,26 @@
-console.log(123);
-
+const setIFrame = document.querySelector(".mapDisplay");
 function selectSatellite() {
-    alert("satellite selected");
+    setIFrame.setAttribute('src',"./map_display/kepler.glSattel.html");
  }
  function selectMap() {
-    alert("map selected");
+   setIFrame.setAttribute('src',"./map_display/kepler.glMap.html");
  }
  function selectRoad() {
-    alert("road selected");
+   setIFrame.setAttribute('src',"./map_display/kepler.glRoad.html");
  }
 
 
 const setSatBtn = document.querySelector("#satelliteSelection");
+const setRoadBtn = document.querySelector("#roadSelection");
+const setMapBtn = document.querySelector("#mapSelection");
 
 setSatBtn.addEventListener('click', () => {
     selectSatellite();
+})
+
+setRoadBtn.addEventListener('click', () => {
+   selectRoad();
+})
+setMapBtn.addEventListener('click', () => {
+   selectMap();
 })
