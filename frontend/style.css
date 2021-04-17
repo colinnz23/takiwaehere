@@ -122,3 +122,8 @@ section {
     background-color: white;
     border-radius: 10px;
 }
+
+.mapDisplay {
+    width: 100%;
+    height: 100%;
+}
