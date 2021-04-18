@@ -56,6 +56,7 @@ section {
 }
 
 .subHeading {
+    margin-top: 5px;
     text-align: center;
     color: white;
     font-size: 20px;
