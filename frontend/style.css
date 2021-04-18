@@ -56,13 +56,16 @@ section {
 }
 
 .subHeading {
-    margin-top: 5px;
     text-align: center;
     color: white;
     font-size: 20px;
     padding: 10px;
     background-color: #52647c;
     margin-bottom: 10px;
+}
+
+.vehicleSub {
+    margin-top: 5px;
 }
 
 .mapViewOptions {
