@@ -76,9 +76,17 @@ for row in rows:
 
 df = pd.DataFrame(waterDepth,columns = ['Latitude','Longitude','Depth'])
 
+<<<<<<< HEAD
 dfStandardCar = df.loc[df['Depth'] <= .20]
 dfHighCar = df.loc[(df['Depth'] > .20) & (df['Depth'] <= .40)]
 dfBoat = df.loc[(df['Depth'] > .40)]
+=======
+df = df.loc[(df['Longitude'] > 0)]
+
+dfStandardCar = df.loc[(df['Depth'] > 0.20)]
+dfHighCar = df.loc[(df['Depth'] > 0.40)]
+dfBoat = df.loc[(df['Depth'] > 1.0) & (df['Depth'] <= 9)]
+>>>>>>> 78878a00a2b8436aa85b0771467af1e84999a45d
 
 df.to_csv('all.csv')
 dfStandardCar.to_csv('standardCar.csv')
@@ -87,4 +95,8 @@ dfBoat.to_csv('boat.csv')
 
 
 
+<<<<<<< HEAD
 print('hello world')
+=======
+print('hello world')
+>>>>>>> 78878a00a2b8436aa85b0771467af1e84999a45d

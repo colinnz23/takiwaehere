@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Simplex</title>
-    <script defer src="./browserActions.js"></script>
+    <title>Simplex Proto</title>
 </head>
 <body>
     <!-- Page Header-->
     <header>
         <div class = "title">
-            <a id="logo" href="#" class="titleText">Simplex Proto</a>
+            <a id="logo" href="#" class="titleText">Simplex</a>
         </div>
     </header>
     <!-- /Page Header-->
@@ -22,40 +21,42 @@
         <nav class = "sidebar">
             <h2 class="subHeading">View Option</h2>
             <ul class="mapViewOptions">
-                <li class="item">
-                    <a href="#" id="mapSelection" class="mapText"><span>Map</span></a>
+                <li id="satelliteSelection" class="item">
+                    <a href="#" class="mapText"><span>Satellite</span></a>
                 </li>
-                <li class="item">
-                    <a href="#" id="satelliteSelection" class="mapText"><span>Satellite</span></a>
+                <li id="mapSelection" class="item">
+                    <a href="#" class="mapText"><span>Map</span></a>
                 </li>
-                <li class="item">
-                    <a href="#" id="roadSelection" class="mapText"><span>Road</span></a>
+                <li id="roadSelection" class="item">
+                    <a href="#" class="mapText"><span>Road</span></a>
                 </li>
             </ul>
-            <h2 class="subHeading">Vehicle</h2>
+            <h2 class="subHeading vehicleSub">Vehicle - Not Suitable</h2>
             <div class="methodOptions">
-                <div class="methodWrapper">
-                    <input type="checkbox" class = "methodCheckbox" id="car" name="car"><label for="car">Car</label>
+                <div id="all" class="methodWrapper">
+                    <input type="checkbox" class = "methodCheckbox" name="all"><label for="all">All</label>
                 </div>
-                <div class="methodWrapper">
-                    <input type="checkbox" class = "methodCheckbox" id="truck" name="truck"><label for="truck">Truck</label>
+                <div id="car" class="methodWrapper">
+                    <input type="checkbox" class = "methodCheckbox" name="car"><label for="car">Car</label>
                 </div>
-                <div class="methodWrapper">
-                    <input type="checkbox" class = "methodCheckbox" id="bus" name="bus"><label for="bus">Bus</label>
+                <div id="truck" class="methodWrapper">
+                    <input type="checkbox" class = "methodCheckbox" name="truck"><label for="truck">Truck</label>
                 </div>
-                <div class="methodWrapper">
-                    <input type="checkbox" class = "methodCheckbox" id="motorbike" name="motorbike"><label for="motorbike">Motorbike</label>
+            </div>
+            <h2 class="subHeading vehicleSub">Vehicle - Suitable</h2>
+            <div class="methodOptions">
+                <div id="boat" class="methodWrapper">
+                    <input type="checkbox" class = "methodCheckbox" name="boat"><label for="boat">boat</label>
                 </div>
             </div>
         </nav>
         <div id="iframeWrapper" class = "map">
-           <iframe id="iframe" class="mapDisplay" src="./kepler.gl.html"></iframe>
+           <iframe id="iframe" class="mapDisplay" src="./htmlMap/allSattel.html"></iframe>
         </div>
     </section>
 
     <!-- test -->
-
-    <script src="./service/index.js"></script>
+    <script src="./main.js"></script>
 
     <!-- /Body -->
 </body>
