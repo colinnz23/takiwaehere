@@ -58,7 +58,7 @@ section {
 .subHeading {
     text-align: center;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     padding: 10px;
     background-color: #52647c;
     margin-bottom: 10px;
@@ -82,6 +82,10 @@ section {
 
 .item:hover {
     background-color: #e3e8ef;
+}
+
+.item:active {
+    background-color: #b1c2d6;
 }
 
 .mapText {
