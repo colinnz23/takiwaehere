@@ -16,6 +16,7 @@ Members:
 * Colin Watanabe (Data Analysis)
 * Shannon Lu (Data Analysis)
 * Inmo Yang (Data Analysis)
+* Joon Im (Data Analysis)
 * Donghyun Lee (UI/UX)
 * Jason Ko (UI/UX)
 
